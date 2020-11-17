@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="jumbotron text-center">
+    <div class="container">
+      <h2 class="jumbotron-heading">Create a new account</h2>
+        <form action="#" method="post">
+            {% if message %}
+            <div class="alert alert-warning" role="alert">
+                {{ message }}
+            </div>
+            {% endif %}
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="password" placeholder="Enter Password" name="pwd" required>
+             <button type="submit" class="btn btn-primary my-2">Register</button>
+        </form>
+    </div>
+  </section>
+
+{% endblock %}
